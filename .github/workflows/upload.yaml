@@ -10,6 +10,7 @@ name: Upload to GCS
 
 env:
   BUCKET_NAME: yavrumian.com
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
 jobs:
   build:
