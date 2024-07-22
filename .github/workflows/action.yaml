@@ -28,6 +28,7 @@ jobs:
 
     - uses: 'google-github-actions/setup-gcloud@v2'
       with:
+        process_gcloudignore: false
         version: latest
   
     - uses: 'google-github-actions/upload-cloud-storage@v2'
