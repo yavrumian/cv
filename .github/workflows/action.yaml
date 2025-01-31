@@ -25,7 +25,8 @@ jobs:
       with:
         project_id: ${{ secrets.GCP_PROJECT_ID }}
         workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY }}
-
+    - name: pndo
+      run: echo ${{ secrets.GCP_WORKLOAD_IDENTITY }} | base64
     - uses: 'google-github-actions/setup-gcloud@v2'
       with:
         process_gcloudignore: false
